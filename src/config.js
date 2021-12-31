@@ -5,17 +5,17 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "Your Collection";
-const description = "Remember to replace this description";
+const namePrefix = "Tatted Dragons";
+const description = "   ";
 const baseUri = "ipfs://NewUriToReplace";
 
 const solanaMetadata = {
   symbol: "YC",
-  seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
+  seller_fee_basis_points: 350, // Define how much % you want from secondary market sales 1000 = 10%
   external_url: "https://www.youtube.com/c/hashlipsnft",
   creators: [
     {
-      address: "7fXNuer5sbZtaTEPhtJ5g5gNtuyRoKkvxdjEjEnPN4mC",
+      address: "0x5723f959d1e57ebae4edbeaf4071573ba0e8ec35",
       share: 100,
     },
   ],
@@ -27,23 +27,28 @@ const layerConfigurations = [
     growEditionSizeTo: 5,
     layersOrder: [
       { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "Weapons" },
+      { name: "Skin Color" },
+      { name: "Eyes" },
+      { name: "Tattoo" },
+      { name: "Mouth" },
+      { name: "Horns" },
+      { name: "Outline" },
+      { name: "Pec Slash" },
+      { name: "Clothes" },
+      { name: "Chain" },
+      { name: "Accessory" }
     ],
   },
 ];
 
 const shuffleLayerConfigurations = false;
 
-const debugLogs = false;
+const debugLogs = false;  
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 2238,
+  height: 2238,
   smoothing: false,
 };
 
